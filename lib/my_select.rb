@@ -1,13 +1,8 @@
 def my_select(collection)
   arr = []
-  collection.each do |col|
-      if yield(col)
-        arr << col 
+  collection.each do |c|
+      if yield(c)
+        arr << c 
   end
   arr
-end
-
-arr=[1, 2, 3, 4]
-arr.my_select do |a|
-  a.even
 end
