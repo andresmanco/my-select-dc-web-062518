@@ -7,5 +7,6 @@ def my_select(collection)
   arr
 end
 
+arr=[1, 2, 3, 4]
 arr.my_select do |a|
   a.even
