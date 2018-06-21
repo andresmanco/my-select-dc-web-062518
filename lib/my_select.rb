@@ -3,6 +3,7 @@ def my_select(collection)
   collection.each do |c|
       if yield(c)
         arr << c 
+      end
   end
   arr
 end
